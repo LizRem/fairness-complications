@@ -14,6 +14,7 @@ We demonstrated that models have statistically significant gaps in performance a
 ![Gaps in performace](images/ethnic_groups_gaps_nephropathy.png)
 *Gaps in performance on sensitivity, specificity and demographic parity on nephropathy task*
 
+## How to navigate this repo 
 **fine_tune_model.py:** contains code to fine tune pre-trained clinical language models 
 
 **fairness-gap.py:** calculates the gaps in performance and conducts bootstrapping
