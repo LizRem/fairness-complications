@@ -15,6 +15,9 @@ We demonstrated that models have statistically significant gaps in performance a
 *Gaps in performance on sensitivity, specificity and demographic parity on nephropathy task*
 
 **fine_tune_model.py:** contains code to fine tune pre-trained clinical language models 
+
 **fairness-gap.py:** calculates the gaps in performance and conducts bootstrapping
+
 **graphs.ipynb:** builds the graph you see above
+
 **token_length.py:** explore differences in token length at different prediction windows (spoiler, the majority of EHR text is truncated when using the standard 512 truncation)
