@@ -10,6 +10,11 @@ In this paper we leveraged large scale EHR data to explore the performance of pr
 ## What did we find?
 We demonstrated that models have statistically significant gaps in performance across different demographic groups, such as ethnic group, sex and level of deprivation. The performance gaps were particularly pronounced for ethnic minority groups, and those with missing or unknown ethnicity status. There was also indications that ethnic group bias may decrease over time, with longer prediction windows, such 36- or 60-months showing fewer statistically significant gaps than shorter time windows. 
 
+
 ![Gaps in performace](images/ethnic_groups_gaps_nephropathy.png)
 *Gaps in performance on sensitivity, specificity and demographic parity on nephropathy task*
 
+fine_tune_model.py: contains code to fine tune pre-trained clinical language models 
+fairness-gap.py: calculates the gaps in performance and conducts bootstrapping
+graphs.ipynb: builds the graph you see above
+token_length.py: explore differences in token length at different prediction windows (spoiler, the majority of EHR text is truncated when using the standard 512 truncation)
